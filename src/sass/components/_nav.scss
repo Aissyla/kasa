@@ -1,0 +1,18 @@
+@import "../utils/mixins";
+
+.nav-header {
+	@include flex-end;
+
+	&_link-home,
+	&_link-about {
+		color: black;
+		text-decoration: none;
+        font-weight: 500;
+		padding-left: 2rem;
+
+		&:hover,
+		&:focus {
+			text-decoration-line: underline;
+		}
+	}
+}

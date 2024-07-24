@@ -6,4 +6,26 @@
   box-sizing: border-box;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-header_link-home, .nav-header_link-about {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+.nav-header_link-home:hover, .nav-header_link-home:focus, .nav-header_link-about:hover, .nav-header_link-about:focus {
+  text-decoration-line: underline;
+}
+
 /*# sourceMappingURL=index.css.map */
