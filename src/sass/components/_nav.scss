@@ -1,7 +1,8 @@
 @import "../utils/mixins";
+@import "../utils/placeholders";
 
 .nav-header {
-	@include flex-end;
+	@extend %flex-end;
 
 	&_link-home,
 	&_link-about {

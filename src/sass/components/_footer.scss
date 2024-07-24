@@ -1,0 +1,21 @@
+@import "../utils/mixins";
+@import "../utils/placeholders";
+
+footer {
+	@extend %flex-center;
+	height: 140px;
+	background-color: $footer-color;
+	flex-direction: column;
+
+	p {
+        @extend %flex-center;
+        font-weight: 500;
+		color: $tertiary-color;
+        margin: 2% 0 -1% 0;
+	}
+
+	img {
+        margin-bottom: -10px;
+		height: 30px;
+	}
+}

@@ -12,3 +12,15 @@
     display: flex;
     flex-direction: row;
 }
+
+%flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+%flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
