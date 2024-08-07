@@ -1,0 +1,29 @@
+.errorContainer {
+	color: $primary-color;
+	@extend %flex-column;
+}
+
+.errorNumber {
+	@extend %flex-center;
+	@include font(288px, 700);
+}
+
+.errorText {
+	@extend %flex-center;
+	text-align: center;
+	@include font(36px, 500);
+	margin-top: 5rem;
+}
+
+.errorLinkHome {
+	text-decoration: none;
+	color: black;
+	@include font(18px, 500);
+    text-align: center;
+    margin: 10rem;
+
+	&:hover,
+	&:focus {
+		text-decoration-line: underline;
+	}
+}

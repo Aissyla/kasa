@@ -1,0 +1,43 @@
+.card-logement {
+    position: relative;
+    & img {
+        display: flex;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__layer {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        // background: url(../../../src/assets/images/fond-card.png);
+        @include full-width;
+        border-radius: 10px;
+    }
+
+    &__title {
+        position: absolute;
+        @include font(18px, 500);
+        color: $white;
+        left: 5.88%;
+        bottom: 5.88%;
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $cards-container-bg;
+    border-radius: 10px;
+    gap: 50px;
+    margin: 43px 0;
+    padding: 5% 1%;
+}
+
+.link_card_logement {
+    text-decoration: none;
+}

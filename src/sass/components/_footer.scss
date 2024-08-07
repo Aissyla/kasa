@@ -4,7 +4,7 @@
 footer {
 	@extend %flex-center;
 	height: 140px;
-	background-color: $footer-color;
+	background-color: $dark;
 	flex-direction: column;
 
 	p {

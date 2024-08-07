@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+main {
+  margin: 2% 5% 2% 5%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -13,9 +17,14 @@ header {
   margin: 2% 5% 2% 5%;
 }
 
-footer p, footer {
+.errorText, .errorNumber, footer p, footer, .banner-container {
   display: flex;
   justify-content: center;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-header {
@@ -24,7 +33,104 @@ footer p, footer {
   justify-content: flex-end;
 }
 
-footer p, footer {
+.errorText, .errorNumber, footer p, footer, .banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-header_link-home, .nav-header_link-about {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+.nav-header_link-home:hover, .nav-header_link-home:focus, .nav-header_link-about:hover, .nav-header_link-about:focus {
+  text-decoration-line: underline;
+}
+
+.banner-container {
+  height: 223px;
+  border-radius: 25px;
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6) url(../../../src/assets/images/background-banner.png);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.banner-text {
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 700;
+  justify-content: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.card-logement {
+  position: relative;
+}
+.card-logement img {
+  display: flex;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-logement__layer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.card-logement__title {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  left: 5.88%;
+  bottom: 5.88%;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  gap: 50px;
+  margin: 43px 0;
+  padding: 5% 1%;
+}
+
+.link_card_logement {
+  text-decoration: none;
+}
+
+.errorText, .errorNumber, footer p, footer, .banner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.errorText, .errorNumber, footer p, footer, .banner-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,30 +151,31 @@ footer img {
   height: 30px;
 }
 
-footer, footer p {
-  display: flex;
-  justify-content: center;
+.errorContainer {
+  color: #ff6060;
 }
 
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.errorNumber {
+  font-size: 288px;
+  font-weight: 700;
 }
 
-footer, footer p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-header_link-home, .nav-header_link-about {
-  color: black;
-  text-decoration: none;
+.errorText {
+  text-align: center;
+  font-size: 36px;
   font-weight: 500;
-  padding-left: 2rem;
+  margin-top: 5rem;
 }
-.nav-header_link-home:hover, .nav-header_link-home:focus, .nav-header_link-about:hover, .nav-header_link-about:focus {
+
+.errorLinkHome {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin: 10rem;
+}
+.errorLinkHome:hover, .errorLinkHome:focus {
   text-decoration-line: underline;
 }
 

@@ -1,0 +1,15 @@
+.banner-container {
+	height: 223px;
+	border-radius: 25px;
+	@include flex-banner;
+	box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.banner-text {
+	align-items: center;
+	color: $white;
+	font-size: 48px;
+	font-weight: 700;
+	justify-content: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
