@@ -6,14 +6,12 @@
 @mixin bkgrd($background) {
     background: $background;
     background-blend-mode: darken;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 @mixin flex-banner {
     position: relative;
     @extend %flex-center;
-    width: 100%;
     @include bkgrd($banner-background);
     margin-top: 20px;
 }

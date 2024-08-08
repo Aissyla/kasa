@@ -1,0 +1,6 @@
+.about-banner {
+    @include bkgrd($about-background);
+    height: 223px;
+	border-radius: 25px;
+    margin-top: 20px;
+}

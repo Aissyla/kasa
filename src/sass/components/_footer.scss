@@ -3,19 +3,19 @@
 
 footer {
 	@extend %flex-center;
-	height: 140px;
+	height: 207px;
 	background-color: $dark;
 	flex-direction: column;
 
 	p {
         @extend %flex-center;
-        font-weight: 500;
+        @include font(24px, 400);
 		color: $tertiary-color;
-        margin: 2% 0 -1% 0;
+        margin: 3% 0 -2% 0;
 	}
 
 	img {
         margin-bottom: -10px;
-		height: 30px;
+		height: 39.44px;
 	}
 }
