@@ -4,9 +4,8 @@ export default function Card({ cover, title }) { // récupère les infos depuis 
 	return (
 		<article className="card-logement">
 			<img src={cover} alt="location" />
-			<div className="card-logement__layer">
-				<p className="card-logement__title">{title}</p>
-			</div>
+			<div className="card-logement__layer"></div>
+			<p className="card-logement__title">{title}</p>
 		</article>
 	);
 }

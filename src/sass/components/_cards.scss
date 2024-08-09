@@ -13,7 +13,8 @@
         align-items: center;
         position: absolute;
         bottom: 0;
-        // background: url(../../../src/assets/images/fond-card.png);
+        background: url(../../../src/assets/images/fond-card.png);
+        opacity: 0.3;
         @extend %full-width;
         border-radius: 10px;
     }

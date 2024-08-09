@@ -108,6 +108,8 @@ header {
   align-items: center;
   position: absolute;
   bottom: 0;
+  background: url(../../../src/assets/images/fond-card.png);
+  opacity: 0.3;
   border-radius: 10px;
 }
 .card-logement__title {
