@@ -392,6 +392,7 @@ footer {
   height: 207px;
   background-color: #000000;
   flex-direction: column;
+  margin-top: 5%;
 }
 footer p {
   font-size: 24px;
