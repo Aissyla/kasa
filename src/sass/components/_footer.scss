@@ -6,6 +6,7 @@ footer {
 	height: 207px;
 	background-color: $black;
 	flex-direction: column;
+	margin-top: 5%;
 
 	p {
         @extend %flex-center;
