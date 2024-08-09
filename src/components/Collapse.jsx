@@ -38,14 +38,3 @@ export default function Collapse(props) {
 		</div>
 	);
 }
-
-// style, title, text doivent être des chaînes de caractères et est obligatoire
-Collapse.propTypes = {
-    aboutStyle: PropTypes.string,
-    aboutTitle: PropTypes.string.isRequired,
-    aboutText: PropTypes.string.isRequired,
-};
-
-Collapse.defaultProps = {
-    aboutStyle: '',
-};

@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 export default function Host(props) {
 	return (
 		<aside className="host-aside">
@@ -10,9 +8,3 @@ export default function Host(props) {
 		</aside>
 	);
 }
-
-Host.propTypes = {
-	hostName: PropTypes.string.isRequired,
-	hostPic: PropTypes.string.isRequired,
-	id: PropTypes.number.isRequired,
-};
