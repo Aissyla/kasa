@@ -10,3 +10,8 @@
 main {
     margin: 2% 5% 2% 5%;
 }
+
+.fiche-container {
+	@extend %flex-center;
+	flex-direction: column;
+}

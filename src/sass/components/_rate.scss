@@ -1,0 +1,11 @@
+.rate-comp {
+    @extend %flex-between;
+    margin-top: 24px;
+    width: 196px;
+    height: 36px;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+}

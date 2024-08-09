@@ -14,14 +14,14 @@
         position: absolute;
         bottom: 0;
         // background: url(../../../src/assets/images/fond-card.png);
-        @include full-width;
+        @extend %full-width;
         border-radius: 10px;
     }
 
     &__title {
         position: absolute;
         @include font(18px, 500);
-        color: $white;
+        color: $tertiary-color;
         left: 5.88%;
         bottom: 5.88%;
     }

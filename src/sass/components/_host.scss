@@ -1,0 +1,38 @@
+.host-aside {
+	@extend %flex-end;
+	width: 100%;
+}
+
+.host-picture {
+	display: flex;
+	margin-left: 10px;
+	border-radius: 50%;
+	background: $grey;
+    width: 64px;
+    height: 64px;
+
+	& img {
+		@extend %full-width;
+		border-radius: 50%;
+	}
+}
+
+.host-name {
+	@extend %flex-end;
+	width: 63px;
+	height: 66px;
+	text-align: right;
+	@include font(18px, 500);
+}
+
+.rate-host-container {
+    @extend %flex-column;
+	justify-content: center;
+}
+
+.hostInfo-container {
+    @extend %flex-row;
+    justify-content: space-between;
+    align-items: flex-end;
+	width: 100%;
+}

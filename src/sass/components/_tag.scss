@@ -1,0 +1,35 @@
+.tagContainer {
+    display: flex;
+}
+
+.tagButton {
+    @extend %flex-center;
+    @include font(14px, 500);
+    flex-direction: row;
+    background: $primary-color;
+    color: $tertiary-color;
+    margin-top: 4%;
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 2px 10px 0 10px;
+}
+
+.title-tags-container {
+    h1 {
+        margin: 2% 0;
+        color: $primary-color;
+        @include font(36px, 500);
+    }
+
+    h3 {
+        margin: -2% 0 4%;
+        color: $black;
+        @include font(18px, 500);
+    }
+}
+
+.tags-container {
+    display: flex;
+    align-items: baseline;
+}
