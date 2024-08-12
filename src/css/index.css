@@ -101,6 +101,7 @@ header {
   .nav-header_link-home, .nav-header_link-about {
     font-size: 12px;
     text-transform: uppercase;
+    padding-left: 1rem;
   }
 }
 @media screen and (max-width: 365px) {
