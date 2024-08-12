@@ -3,4 +3,9 @@
     height: 223px;
 	border-radius: 25px;
     margin-top: 20px;
+
+    @media screen and (max-width: 768px) {
+		height: 111px;
+		border-radius: 10px;
+	}
 }

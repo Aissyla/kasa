@@ -220,22 +220,48 @@ header {
   border-radius: 25px;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .about-banner {
+    height: 111px;
+    border-radius: 10px;
+  }
+}
 
 .collapse {
   margin: 31px auto 0;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .collapse {
+    margin: 20px 0;
+  }
 }
 .collapse__visible {
   background: #ff6060;
   color: #FFFFFF;
   cursor: pointer;
   height: 47px;
-  padding: 7px 15px;
+  padding: 7px 10px;
   border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .collapse__visible {
+    height: 30px;
+  }
 }
 .collapse__visible h2 {
   font-size: 24px;
   font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .collapse__visible h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collapse__visible h2 {
+    font-size: 13px;
+  }
 }
 .collapse__toggle {
   opacity: 0;
@@ -246,10 +272,15 @@ header {
 }
 .collapse__toggle p {
   margin: 0;
-  padding: 22px 15px;
+  padding: 15px;
   pointer-events: none;
   font-size: 18px;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .collapse__toggle p {
+    font-size: 12px;
+  }
 }
 
 .animated {
@@ -260,6 +291,11 @@ header {
 .chevron {
   width: 22px;
 }
+@media screen and (max-width: 768px) {
+  .chevron {
+    width: 16px;
+  }
+}
 
 .rotated {
   transform: rotate(180deg);
@@ -268,6 +304,11 @@ header {
 
 .about-style {
   width: 87.5%;
+}
+@media screen and (max-width: 768px) {
+  .about-style {
+    width: 100%;
+  }
 }
 
 .collapse-logement {
