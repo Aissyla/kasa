@@ -9,6 +9,14 @@
 
 main {
     margin: 2% 5% 2% 5%;
+    
+    @media screen and (max-width: 1024px) {
+		margin: 0% 10%;
+	}
+
+    @media screen and (max-width: 768px) {
+		margin: 5%;
+	}
 }
 
 .fiche-container {

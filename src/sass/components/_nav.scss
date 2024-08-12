@@ -11,6 +11,16 @@
         @include font(24px, 500);
 		padding-left: 2rem;
 
+		@media screen and (max-width: 768px) {
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		// EN DESSOUS DE 320PX AUCUNE PRISE EN CHARGE
+		@media screen and (max-width: 365px) {
+			padding-left: 0.5rem;
+		}
+
 		&:hover,
 		&:focus {
 			text-decoration-line: underline;

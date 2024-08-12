@@ -13,6 +13,11 @@ footer {
         @include font(24px, 400);
 		color: $tertiary-color;
         margin: 3% 0 -2% 0;
+
+		@media screen and (max-width: 768px) {
+			font-size: 12px;
+			width: 100px;
+		}
 	}
 
 	img {

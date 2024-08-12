@@ -9,6 +9,16 @@
 main {
   margin: 2% 5% 2% 5%;
 }
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 0% 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin: 5%;
+  }
+}
 
 .fiche-container {
   flex-direction: column;
@@ -19,6 +29,19 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 2% 5% 2% 5%;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    margin: 5% 10% 5% 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    margin: 5%;
+  }
+  header img {
+    height: 46.88px;
+  }
 }
 
 .errorText, .errorNumber, footer p, footer, .tagButton, .banner-container, .fiche-container {
@@ -74,6 +97,17 @@ header {
   font-weight: 500;
   padding-left: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .nav-header_link-home, .nav-header_link-about {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 365px) {
+  .nav-header_link-home, .nav-header_link-about {
+    padding-left: 0.5rem;
+  }
+}
 .nav-header_link-home:hover, .nav-header_link-home:focus, .nav-header_link-about:hover, .nav-header_link-about:focus {
   text-decoration-line: underline;
 }
@@ -83,6 +117,12 @@ header {
   border-radius: 25px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
+@media screen and (max-width: 768px) {
+  .banner-container {
+    height: 111px;
+    border-radius: 10px;
+  }
+}
 
 .banner-text {
   align-items: center;
@@ -91,6 +131,22 @@ header {
   font-weight: 700;
   justify-content: center;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+@media screen and (max-width: 1024px) {
+  .banner-text {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-text {
+    font-size: 24px;
+    font-weight: 700;
+    left: 5.6%;
+    line-height: 100%;
+    position: absolute;
+    top: 28.04%;
+    width: 230px;
+  }
 }
 
 .card-logement {
@@ -102,6 +158,17 @@ header {
   height: 340px;
   border-radius: 10px;
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .card-logement img {
+    width: 335px;
+    height: 255px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .card-logement img {
+    width: 289px;
+  }
 }
 .card-logement__layer {
   display: flex;
@@ -130,6 +197,14 @@ header {
   gap: 50px;
   margin: 43px 0;
   padding: 5% 1%;
+}
+@media screen and (max-width: 768px) {
+  .cards-container {
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 25px 0;
+    gap: 22px;
+  }
 }
 
 .link_card_logement {
@@ -401,6 +476,12 @@ footer p {
   font-weight: 400;
   color: #FFFFFF;
   margin: 3% 0 -2% 0;
+}
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+    width: 100px;
+  }
 }
 footer img {
   margin-bottom: -10px;

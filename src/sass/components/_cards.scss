@@ -6,6 +6,16 @@
         height: 340px;
         border-radius: 10px;
         object-fit: cover;
+
+        @media screen and (max-width: 768px) {
+            width: 335px;
+            height: 255px;
+        }
+
+        // EN DESSOUS DE 320PX AUCUNE PRISE EN CHARGE
+        @media screen and (max-width: 350px) {
+            width: 289px;
+        }
     }
 
     &__layer {
@@ -37,6 +47,13 @@
     gap: 50px;
     margin: 43px 0;
     padding: 5% 1%;
+
+    @media screen and (max-width: 768px) {
+        background-color: $tertiary-color;
+        padding: 0;
+        margin: 25px 0;
+        gap: 22px;
+    }
 }
 
 .link_card_logement {
