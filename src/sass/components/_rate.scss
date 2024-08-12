@@ -3,9 +3,19 @@
     margin-top: 24px;
     width: 196px;
     height: 36px;
+
+    @media screen and (max-width: 768px) {
+        width: 98px;
+        margin-top: 18px;
+    }
 }
 
 .star {
     width: 30px;
     height: 30px;
+
+    @media screen and (max-width: 768px) {
+        width: 18px;
+        height: 18px;
+    }
 }

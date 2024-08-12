@@ -270,6 +270,9 @@ header {
   border-radius: 5px;
   transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
 }
+.collapse__toggle__animated {
+  height: auto;
+}
 .collapse__toggle p {
   margin: 0;
   padding: 15px;
@@ -315,6 +318,14 @@ header {
   gap: 6%;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .collapse-logement {
+    flex-direction: column !important;
+  }
+  .collapse-logement .collapse {
+    margin: 10px 0 !important;
+  }
+}
 
 .equipList {
   list-style-type: none;
@@ -325,6 +336,11 @@ header {
   width: 100%;
   height: 415px;
   margin: 2% 0;
+}
+@media screen and (max-width: 768px) {
+  #carrousel-container {
+    height: 255px;
+  }
 }
 
 .slider {
@@ -354,6 +370,11 @@ header {
   left: 48%;
   top: 86%;
 }
+@media screen and (max-width: 768px) {
+  .slider__number {
+    display: none;
+  }
+}
 
 .active-anim {
   opacity: 1;
@@ -365,9 +386,13 @@ header {
   z-index: 1;
   cursor: pointer;
   width: 47px;
-  height: 79px;
   top: 42%;
   right: 2%;
+}
+@media screen and (max-width: 768px) {
+  .rightArrow {
+    width: 12px;
+  }
 }
 
 .leftArrow {
@@ -376,9 +401,13 @@ header {
   z-index: 1;
   cursor: pointer;
   width: 47px;
-  height: 79px;
   top: 42%;
   left: 2%;
+}
+@media screen and (max-width: 768px) {
+  .leftArrow {
+    width: 12px;
+  }
 }
 
 .host-aside {
@@ -393,6 +422,12 @@ header {
   width: 64px;
   height: 64px;
 }
+@media screen and (max-width: 768px) {
+  .host-picture {
+    height: 32px;
+    width: 32px;
+  }
+}
 .host-picture img {
   border-radius: 50%;
 }
@@ -403,16 +438,32 @@ header {
   text-align: right;
   font-size: 18px;
   font-weight: 500;
+  color: #ff6060;
+}
+@media screen and (max-width: 768px) {
+  .host-name {
+    font-size: 12px;
+  }
 }
 
 .rate-host-container {
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .rate-host-container {
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+  }
+}
 
 .hostInfo-container {
   justify-content: space-between;
-  align-items: flex-end;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .hostInfo-container {
+    flex-direction: column !important;
+  }
 }
 
 .rate-comp {
@@ -420,10 +471,22 @@ header {
   width: 196px;
   height: 36px;
 }
+@media screen and (max-width: 768px) {
+  .rate-comp {
+    width: 98px;
+    margin-top: 18px;
+  }
+}
 
 .star {
   width: 30px;
   height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .star {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .tagContainer {
@@ -442,6 +505,12 @@ header {
   margin-right: 10px;
   padding: 2px 10px 0 10px;
 }
+@media screen and (max-width: 768px) {
+  .tagButton {
+    font-size: 10px;
+    border-radius: 5px;
+  }
+}
 
 .title-tags-container h1 {
   margin: 2% 0;
@@ -449,11 +518,23 @@ header {
   font-size: 36px;
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  .title-tags-container h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+}
 .title-tags-container h3 {
   margin: -2% 0 4%;
   color: #000000;
   font-size: 18px;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .title-tags-container h3 {
+    font-size: 14px;
+    margin: 2% 0;
+  }
 }
 
 .tags-container {

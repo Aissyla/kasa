@@ -11,6 +11,11 @@
     width: 64px;
     height: 64px;
 
+	@media screen and (max-width: 768px) {
+		height: 32px;
+		width: 32px;
+	}
+
 	& img {
 		@extend %full-width;
 		border-radius: 50%;
@@ -23,16 +28,29 @@
 	height: 66px;
 	text-align: right;
 	@include font(18px, 500);
+	color: $primary-color;
+
+	@media screen and (max-width: 768px) {
+		font-size: 12px;
+	}
 }
 
 .rate-host-container {
     @extend %flex-column;
 	justify-content: center;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: row-reverse !important;
+		justify-content: space-between;
+	}
 }
 
 .hostInfo-container {
     @extend %flex-row;
     justify-content: space-between;
-    align-items: flex-end;
 	width: 100%;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column !important;
+	}
 }
